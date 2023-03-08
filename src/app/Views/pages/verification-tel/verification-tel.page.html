@@ -1,0 +1,36 @@
+<ion-content style="height: 100vh; display:flex; align-items: center">
+  <ion-list style="text-align: center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="text-green-500">Mix Fruit</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="flex justify-center">
+          <img src="../../../../assets/icon/Capture.PNG" alt="logo" srcset="">
+        </div>
+      </ion-card-content>
+      <ion-text color="info"><ion-icon name="information-circle"></ion-icon></ion-text>
+      Mettez votre numéro de telephone si vous avez un compte.
+    </ion-card>
+    <br>
+    <form [formGroup]="veritelForm" (ngSubmit)="onSubmit()">
+    <ion-item lines="none">
+      <ion-label position="stacked">Telephone</ion-label>
+      <ion-input type="tel" name="username" formControlName="username" placeholder="700000000" ></ion-input>
+    </ion-item>
+      <span *ngIf="!veritelForm?.get('username')?.valid && veritelForm?.get('username')?.touched">
+<!--
+      <span class="error ion-padding" *ngIf="submitted && errorControl.username.errors">
+-->
+    Saisie incorrecte.
+    </span>
+
+      <br>
+    <!--  <span class="error ion-padding" *ngIf="submitted && errorControl.username.errors">
+      Numero incorrect.
+    </span>-->
+    <ion-button type="submit"> Valider </ion-button>
+    </form>
+     <ion-button type="submit" routerLink="/create-compte">Créer un compte</ion-button>
+  </ion-list>
+</ion-content>

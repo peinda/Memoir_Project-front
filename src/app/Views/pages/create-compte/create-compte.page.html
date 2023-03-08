@@ -1,0 +1,79 @@
+
+<ion-content padding>
+
+    <ion-list style="text-align: center">
+      <ion-card>
+      <ion-card-header>
+        <ion-card-title>Mix Fruit</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="assets/icon/Capture.PNG" alt="logo" srcset="">
+      </ion-card-content>
+    </ion-card>
+    </ion-list>
+
+  <ion-content padding>
+
+    <ion-list style="text-align: center">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Mix Fruit</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="assets/icon/Capture.PNG" alt="logo" srcset="">
+        </ion-card-content>
+      </ion-card>
+      <form action="">
+        <ion-item lines="none">
+          <ion-label position="stacked">Prenom</ion-label>
+          <ion-input type="text" name="prenom" formControlName="prenom"></ion-input>
+        </ion-item>
+        <span class="error ion-padding">
+      Veuillez saisir ce champ.
+    </span>
+        <span class="error ion-padding">
+      Prenom incorrect.
+    </span>
+        <ion-item lines="none">
+          <ion-label position="stacked">Nom</ion-label>
+          <ion-input type="text" name="nom" formControlName="nom"></ion-input>
+        </ion-item>
+        <span class="error ion-padding">
+      Veuillez saisir ce champ.
+    </span>
+        <span class="error ion-padding">
+      Nom incorrect.
+    </span>
+        <ion-item lines="none">
+          <ion-label position="stacked">Telephone</ion-label>
+          <ion-input type="text" name="telephone" formControlName="tel"></ion-input>
+        </ion-item>
+        <span class="error ion-padding">
+      Veuillez saisir ce champ.
+    </span>
+        <span class="error ion-padding">
+      Numero incorrect.
+    </span>
+        <ion-item lines="none">
+          <ion-label position="stacked">Adresse de livraison</ion-label>
+          <ion-input type="text" name="adresse" formControlName="adress"></ion-input>
+        </ion-item>
+        <span class="error ion-padding">
+      Veuillez saisir ce champ.
+    </span>
+        <span class="error ion-padding">
+      adresse incorrect.
+    </span>
+        <ion-button type="submit" style="--background:#64BA02;"> Créer un compte </ion-button>
+        <br>
+        <ion-button type="submit" routerLink="/verification-tel" style="--background:#64BA02;">Se Connecter</ion-button>
+      </form>
+    </ion-list>
+
+  </ion-content>
+
+
+
+</ion-content>
+
+

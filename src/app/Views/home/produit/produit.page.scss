@@ -1,0 +1,27 @@
+.produit-content{
+  background:#FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ion-card{
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+}
+.produits{
+  width: 90%;
+}
+.pot500{
+  background: linear-gradient(to bottom, #e98e01 0%, #e6bf2e 100%);
+  border-radius: 25px !important;
+  .contenu{
+    color: #eeedf4;
+    font-weight: bold;
+  }
+}
+.pot1000{
+  background: linear-gradient(to bottom, #9ba424 0%, #e6e943 100%);
+  border-radius: 25px !important;
+}
+

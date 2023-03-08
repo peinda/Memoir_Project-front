@@ -1,0 +1,59 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Contact info</ion-card-title>
+    <ion-card-subtitle>77 455 87 57 </ion-card-subtitle>
+  </ion-card-header>
+</ion-card>
+
+<ion-content class="lesPots">
+<!--    <ion-list lines="none" (click)="openCart()" >-->
+<!--      <ion-item *ngFor="let produit of dataProduct">-->
+<!--        <ion-card class="pot500">-->
+<!--          <ion-grid>-->
+<!--            <ion-row>-->
+<!--              <ion-col size="8">-->
+<!--                <ion-row>-->
+<!--                  <ion-col size="12">-->
+<!--                    <ion-label style=" color: #eeedf4; font-weight: bold"> <h1 style="font-size: 18px">{{produit.nom}}<br>{{produit.prix}}cfa</h1> </ion-label>-->
+<!--                  </ion-col>-->
+<!--&lt;!&ndash;                  <ion-col size="12" class="contenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h5>Contenu :</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul style="display: inline; font-size: 10px" style=" color: #eeedf4;">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Melon</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Poire</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Raisin</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Ananas</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Papaye</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Pastéque</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li style="float: left;"><i class="fa-li"></i>Banane</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </ion-col>&ndash;&gt;-->
+<!--                </ion-row>-->
+<!--              </ion-col>-->
+<!--              <ion-col size="4" style="justify-content: center">-->
+<!--                <ion-img src="../../../../../assets/icon/500.jpeg" style="height: 200px;width: 70px"></ion-img>-->
+<!--              </ion-col>-->
+<!--            </ion-row>-->
+<!--          </ion-grid>-->
+<!--        </ion-card>-->
+<!--      </ion-item>-->
+<!--    </ion-list>-->
+
+  <div *ngFor="let produit of dataProduct" class="w-auto text-white rounded-xl bg-orange-500 mx-6 text-center my-5">
+    <label class="text-3xl">{{produit.nom}}</label>
+    <label class="text-xl block">{{produit.prix | number}} Fcfa</label>
+    <!-- Image -->
+    <img src="{{produit.photo}}" alt="{{produit.nom}}" width="200">
+    <!-- Contenu -->
+    <div class="my-3 text-left">
+      <label class="block mx-5">Contenu :</label>
+      <div class="my-2 mx-3 grid grid-cols-4">
+        <label>Melon</label>
+        <label>Poire</label>
+        <label>Raisin</label>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>
